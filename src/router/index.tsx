@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import HomePage from 'pages/Home';
 import LikedCatPage from 'pages/LikedCat';
 
@@ -8,6 +8,7 @@ const Router = () => {
     <Routes>
       <Route path='/' element={<HomePage />} />
       <Route path='/liked-cats' element={<LikedCatPage />} />
+      <Route path='*' element={<Navigate replace to='/' />} />
     </Routes>
   );
 };
