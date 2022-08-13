@@ -1,0 +1,32 @@
+.cardWrapper {
+  width: 300px;
+  height: 400px;
+  border-radius: 12px;
+  display: flex;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  @media screen and (max-width: 800px) {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.iconWrapper {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.icon {
+  filter: invert(22%) sepia(44%) saturate(6366%) hue-rotate(337deg)
+    brightness(84%) contrast(105%);
+  width: 40px;
+}

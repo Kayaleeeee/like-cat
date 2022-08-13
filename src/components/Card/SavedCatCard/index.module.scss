@@ -1,0 +1,28 @@
+.cardWrapper {
+  width: 230px;
+  height: 300px;
+  border-radius: 12px;
+  display: flex;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 10px;
+}
+
+.buttonWrapper {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.button {
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  background: cornflowerblue;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}

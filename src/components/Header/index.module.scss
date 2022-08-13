@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  font-style: italic;
+  color: white;
+  cursor: pointer;
+}
+
+.menuList {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 30px;
+
+  @media screen and (max-width: 800px) {
+    margin-left: 0px;
+    margin-top: 16px;
+  }
+}
+
+.menu {
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  padding-right: 16px;
+  text-align: center;
+
+  &:hover {
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
